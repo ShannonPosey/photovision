@@ -29,13 +29,39 @@ a:hover {
     text-decoration: underline dashed #08893e;
 }
 
-.photo-container {
-    display: grid;
-    grid-template-columns: 3px 3px 3px 3px;
-    grid-template-rows: 4px 4px 4px 4px;
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
 }
 
+.photo-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+   
+}
+
+.photo-card {
+    /* background-color: #333bff; */
+border: 2px solid #A9A9A9;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
 .photo {
-    width: 100px;
+    width: max-content;
     height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo-desc {
+    text-align: center;
+}
+
+h4 {
+    padding: 5px;
+    text-decoration: underline;
 }
